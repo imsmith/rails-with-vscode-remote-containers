@@ -9,7 +9,7 @@ FROM ruby:3.0
 RUN gem install ruby-debug-ide debase solargraph
 
 # Install git, process tools
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
     apt-get update && \
     apt-get -y install git procps nodejs
 
