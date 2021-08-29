@@ -25,6 +25,6 @@ ENV SHELL /bin/bash
 
 WORKDIR /usr/src/app
 COPY ./Gemfile ./Gemfile.lock ./
-RUN bundle install
+RUN bundle update --bundler && bundle install
 
 EXPOSE 3000
