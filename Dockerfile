@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-FROM ruby:2.6
+FROM ruby:3.0
 
 # Install ruby-debug-ide and debase
 RUN gem install ruby-debug-ide debase solargraph
